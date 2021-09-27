@@ -1,0 +1,12 @@
+.idea
+.gitignore
+target
+
+collection/.idea
+collection/collection.iml
+collection/target
+collection.iml
+
+hippodrome/.idea
+hippodrome/target
+hippodrome/hippodrome.iml

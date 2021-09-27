@@ -1,5 +1,6 @@
 .idea
 .gitignore
+project.iml
 target
 
 collection/.idea
@@ -10,3 +11,8 @@ collection.iml
 hippodrome/.idea
 hippodrome/target
 hippodrome/hippodrome.iml
+
+classLoader/.idea
+classLoader/target
+classLoader/tempInfo.txt
+classLoader/classLoader.iml

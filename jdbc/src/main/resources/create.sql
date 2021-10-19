@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS authors (
+    id BIGINT IDENTITY NOT NULL PRIMARY KEY ,
+    name VARCHAR(255) NOT NULL,
+    UNIQUE KEY author_name_UNIQUE (name)
+);
+
+CREATE TABLE IF NOT EXISTS books (
+    id BIGINT IDENTITY NOT NULL PRIMARY KEY ,
+    name VARCHAR(255) NOT NULL,
+    author_id BIGINT NOT NULL,
+    CONSTRAINT fk_author FOREIGN KEY (author_id) REFERENCES authors(id) ON DELETE CASCADE,
+    UNIQUE KEY book_name_UNIQUE (name)
+);
+
+CREATE TABLE IF NOT EXISTS storage (
+    book_id BIGINT NOT NULL ,
+    quantity INT NOT NULL ,
+    price DOUBLE NOT NULL ,
+    CONSTRAINT fk_book FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+);

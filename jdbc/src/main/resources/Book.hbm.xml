@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.model.Book" table="books">
+        <meta attribute="class-description">
+            This class contains book's details.
+        </meta>
+        <id name="id" type="long" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" type="string" unique="true" unique-key="book_name_UNIQUE"/>
+        <many-to-one name="author" class="com.model.Author">
+            <column name="author_id" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

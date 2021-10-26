@@ -6,7 +6,6 @@ target
 collection/.idea
 collection/collection.iml
 collection/target
-collection.iml
 
 hippodrome/.idea
 hippodrome/target
@@ -16,6 +15,10 @@ classLoader/.idea
 classLoader/target
 classLoader/tempInfo.txt
 classLoader/classLoader.iml
+
+rest/rest.iml
+rest/.idea
+rest/target
 
 jdbc/.idea
 jdbc/target

@@ -23,3 +23,8 @@ rest/target
 jdbc/.idea
 jdbc/target
 jdbc/jdbc.iml
+
+soap/target
+soap/.idea
+soap/soap.iml
+soap/src/main/java/com/soap/gen

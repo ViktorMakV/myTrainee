@@ -53,6 +53,7 @@
         <module>collection</module>
         <module>hippodrome</module>
         <module>classLoader</module>
+        <module>broker</module>
         <module>rest</module>
         <module>jdbc</module>
         <module>soap</module>
